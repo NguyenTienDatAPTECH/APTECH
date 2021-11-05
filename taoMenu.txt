@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main(){
+	int n;
+	printf("vui long nhap vao n:");
+	scanf("%d",&n);
+	int arr[4];
+	int flag=0;
+	for(int i=0;i<n;i++){
+		if(n>4){
+			printf("vui long nhap lai n ");
+		}else if(n==1){
+			int n1;
+			printf("1. Com ga\n 2. Pho\n 3.Bun\n 4. Quay lai\n");
+			scanf("%d",&n1);
+			if(n1==1 || n1==2 || n1==3){
+				printf("cam on da goi mon \n");
+			}
+			flag=1;
+			
+		}else if(n==2){
+			int n2;
+			printf("1. Coca\n 2.Nuoc loc\n 3. Cafe\n");
+			scanf("%d",&n2);
+			if(n2==1 || n2==2 || n2==3){
+				printf("cam on da goi do uong");
+				flag=1;
+			}else flag=1;
+			
+			
+		}
+		else if(n==3){
+			printf("so tien ban can phai thanh toan la : \n cam on quy khach");
+			flag=1;
+		}else if (n==4){
+			printf("xin chao va hen gap lai");
+			break;
+		}
+	}
+}
